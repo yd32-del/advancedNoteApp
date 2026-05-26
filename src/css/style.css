@@ -1,0 +1,30 @@
+body {
+    background-color: aliceblue;
+}
+
+.tasks-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto; */
+    width: 100vw;
+}
+
+
+.task {
+    width: 20em;
+    min-height: 10em;
+    border: solid;
+    padding: 0.5em;
+    border-color: red;;
+}
+textarea{
+    /* text-align: top; */
+    box-sizing: border-box;
+    /* resize: both; */
+    resize: vertical;
+}
+.task .description {
+    resize: both;
+    min-height: 5em;
+    z-index: 4;
+}

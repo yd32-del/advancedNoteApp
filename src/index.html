@@ -8,7 +8,15 @@
 </head>
 
 <body>
-    
+    <div class = "create">
+        <button>New Task</button>
+        <div class = "create-category">
+            <input type = "text"></input>
+            <button>Create New Catgeory</button>
+        </div>
+    </div>
+   
+   
     <div class="task-container">
         <div class = "task">
             <div class = "task-header">
@@ -20,20 +28,24 @@
             </textarea>
             <div class = "task-category">  
                 <p>Catgeory</p>
-                <div dlass = "task-dropDown">
+                <div class = "task-dropDown">
                     <select>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+                        <option value="mercedes"></option>
+                        <option value="audi"></option>
                     </select>
                 </div>
                 
             </div>
-            <button class = "task-edit">Edit</button>
-            <button class = "task-save">Save</button>
+            <div class="task-buttons">
+                <button class = "task-edit">Edit</button>
+                <button class = "task-save">Save</button>
+                <button class = task-delete>Delete</button>
+            </div>
+
         </div>
         <!-- <div>Hello</div>
         <div>Hello</div> -->
     </div>
 </body>
-<script type = "module"></script>
+<script type = "module" src = "components/ui/header.js"></script>
 </html>

@@ -4,14 +4,15 @@ import dropDownMenu from "../utils/createDropDown.js"
 //renders all the dropdown options
 
 
-export default function taskCategory () {
+export default function category () {
     const taskCategory = document.createElement("div");
     const p = document.createElement("p");
     const dropDown = new dropDownMenu;
 
     p.innerText = "Category";
 
-    taskCategory.classList.add("task-category");
+    taskCategory.classList.add("category");
     taskCategory.append(p, dropDown);
+    return taskCategory;
 }
 // taskCategory();

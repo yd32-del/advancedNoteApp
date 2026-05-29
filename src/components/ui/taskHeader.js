@@ -1,7 +1,7 @@
 import createInput from "../utils/createInput.js";
 //Creates title and date input
 export default function taskHeader (name) {
-    const title = document.createElement("h2");
+    const title = createInput("text", null, "Task Name")
     const input = createInput("date", null);
     const taskHeader = document.createElement("div");
 
@@ -12,4 +12,3 @@ export default function taskHeader (name) {
 
     return taskHeader;
 }
-// taskHeader("My task 1");

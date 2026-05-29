@@ -16,7 +16,14 @@ body {
     border: solid;
     padding: 0.5em;
     border-color: red;;
+    cursor: none;
+    
 }
+
+.task-state {
+    pointer-events: none;
+}
+
 textarea{
     /* text-align: top; */
     box-sizing: border-box;

@@ -14,38 +14,49 @@
             <input type = "text"></input>
             <button>Create New Catgeory</button>
         </div>
+        
     </div>
-   
+    <div class = "category">  
+        <p>Catgeory</p>
+        <div class = "task-dropDown">
+            <select>
+                <option value="mercedes">Hello</option>
+                <option value="audi">neigh</option>
+            </select>
+        </div> 
+    </div>
    
     <div class="task-container">
         <div class = "task">
             <div class = "task-header">
-                <h2 class = "task-name">Task 1</h2>
+                <input class = "task-name" placeholder = "Task Name">Task 1</input>
                 <input type = "date" class = "date-dueDate"></input>
             </div>
             <textarea class="description">   
 
             </textarea>
-            <div class = "task-category">  
-                <p>Catgeory</p>
-                <div class = "task-dropDown">
-                    <select>
-                        <option value="mercedes"></option>
-                        <option value="audi"></option>
-                    </select>
-                </div>
-                
-            </div>
+           
             <div class="task-buttons">
                 <button class = "task-edit">Edit</button>
                 <button class = "task-save">Save</button>
                 <button class = task-delete>Delete</button>
             </div>
+            <div class = "category">  
+                <p>Catgeory</p>
+                <div class = "task-dropDown">
+                    <select>
+                        <option value="mercedes">ello</option>
+                        <option value="audi">Nei</option>
+                    </select>
+                </div> 
+            </div>
+            
+
 
         </div>
         <!-- <div>Hello</div>
         <div>Hello</div> -->
     </div>
 </body>
-<script type = "module" src = "components/ui/header.js"></script>
+<script type = "module" src = "components/utils/task.js"></script>
 </html>

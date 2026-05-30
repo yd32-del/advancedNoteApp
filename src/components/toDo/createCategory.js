@@ -10,9 +10,9 @@ export default function createCategory (categoryName) {
         option.innerText = categoryName;
         option.value = categoryName.toLowerCase();
         select[i].appendChild(option);
-        console.log(select[i]);
+        // console.log(select[i]);
     }
-    console.log(select);
+    // console.log(select);
     
 }
 

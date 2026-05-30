@@ -16,12 +16,14 @@ body {
     border: solid;
     padding: 0.5em;
     border-color: red;;
-    cursor: none;
     
 }
 
 .task-state {
     pointer-events: none;
+}
+.task-edit{
+    pointer-events: all;
 }
 
 textarea{

@@ -10,9 +10,22 @@ export default function category () {
     const dropDown = new dropDownMenu;
 
     p.innerText = "Category";
+    taskCategory.append(p);
 
+    //make it aoppemd all curremt dropdown option
+    const mainSelect = document.getElementById("mainDropDown");
+    const options = mainSelect.children;
+
+   
+    const newSelect = dropDown.children;
+    for(let i = 0; i < options.length; i++){
+        const addOption = options[i].cloneNode(true);
+        newSelect[0].append(addOption);
+    }
+    
+    
     taskCategory.classList.add("category");
-    taskCategory.append(p, dropDown);
+    taskCategory.append( dropDown);
     return taskCategory;
 }
 // taskCategory();

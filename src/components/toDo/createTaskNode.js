@@ -2,7 +2,7 @@ import taskCategory from "../ui/category.js";
 import taskButtons from "../ui/taskButtons.js"
 import taskHeader from "../ui/taskHeader.js";
 import taskTextarea from "../ui/taskTextArea.js";
-
+// import btnEvents from "../toDo/btnEvents.js"
 
 //This will handle the functionality
 // button on click; -> update dom. => append the  task. 
@@ -13,15 +13,18 @@ import taskTextarea from "../ui/taskTextArea.js";
 export default function createTaskNode () {
     const taskContainer = document.createElement("div");
     taskContainer.classList.add("task");
+    taskContainer.classList.add("task-state");
 
     const header = taskHeader();
     const textarea = taskTextarea();
     const buttons = taskButtons();
     const category = taskCategory();
-  
+    
     taskContainer.append(header, textarea, buttons, category);
 
-    console.log(taskContainer);
+
+    return taskContainer;
 }
 
-createTaskNode();
+
+

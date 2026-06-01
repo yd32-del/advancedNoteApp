@@ -13,6 +13,7 @@ export default function editTask(event){
         task.classList.add("task-state");
         targetBtn.innerText = "Edit";
     }
+    console.log("Editing")
     
 }
 

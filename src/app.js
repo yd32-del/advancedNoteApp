@@ -7,7 +7,7 @@ const taskContainer = document.querySelector(".task-container");
 createTaskbtn.addEventListener("click", (e)=> {
     const newTask = createTask();
     console.log(newTask);
-    console.log(taskContainer)
+    // console.log(taskContainer)
     taskContainer.append(newTask);
 })
 
@@ -19,6 +19,8 @@ createCategoryBtn.addEventListener("click", (e) => {
     createCategory(input);
     console.log(input);
 })
+
+
 
 
 //Checks if a certain option has been selected in the dropdown

@@ -13,9 +13,8 @@ export default function taskButton () {
     for (let i = 0; i < temp.length; i++) {
        
         const button = createButton(temp[i], temp[i].toLowerCase(), `task-${temp[i].toLowerCase()}`);
-         if(i === 0){
-            button.classList.remove("task-state");
-        }
+        
+        button.classList.add("task-edit");
         button.addEventListener("click", functTemp[i]);
         buttonContainer.appendChild(button);
     }

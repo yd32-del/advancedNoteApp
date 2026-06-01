@@ -11,7 +11,6 @@ export default function category () {
 
     p.innerText = "Category";
     taskCategory.append(p);
-
     //make it aoppemd all curremt dropdown option
     const mainSelect = document.getElementById("mainDropDown");
     const options = mainSelect.children;
@@ -22,7 +21,7 @@ export default function category () {
         const addOption = options[i].cloneNode(true);
         newSelect[0].append(addOption);
     }
-    
+    ///////
     
     taskCategory.classList.add("category");
     taskCategory.append( dropDown);

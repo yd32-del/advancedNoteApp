@@ -2,7 +2,7 @@
 
 //On click create the categ90ry --> then update all insatnces of the category
 export default function createCategory (categoryName) {
-
+    
     //Seclect all instances of the dropddown ie for each task. 
     const select = document.querySelectorAll("select");
     for (let i = 0; i < select.length; i++) {

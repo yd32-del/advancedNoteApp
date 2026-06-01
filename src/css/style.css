@@ -22,6 +22,7 @@ body {
 .task-state {
     pointer-events: none;
 }
+
 .task-edit{
     pointer-events: all;
 }

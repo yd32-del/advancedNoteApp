@@ -2,6 +2,7 @@ import createTask from "./components/toDo/createTaskNode.js";
 import createCategory from "./components/toDo/createCategory.js";
 import appendSaveData from "./components/toDo/appendSaveData.js";
 import updateId from "./components/toDo/updateId.js";
+import categoryFilter from "./components/toDo/categoryFilter.js"
 
 
 const createTaskbtn = document.getElementById("createTaskBtn");
@@ -10,9 +11,6 @@ const taskContainer = document.querySelector(".task-container");
 
 createTaskbtn.addEventListener("click", (e)=> {
     const newTask = createTask();
-    
-    // console.log(newTask);
-    // console.log(taskContainer)
     taskContainer.append(newTask);
     updateId();
 })
@@ -31,10 +29,8 @@ window.onload = () => {
     // localStorage.clear()
 }
 
-
-
-
-//Checks if a certain option has been selected in the dropdown
-// category.addEventListener("input", (e) => {
-//     console.log("My form has been changed", e)
-// })
+const categoryDropdown = document.getElementById("mainDropDown");
+categoryDropdown.addEventListener("input", () => {
+    console.log("Yess");
+    categoryFilter();
+})

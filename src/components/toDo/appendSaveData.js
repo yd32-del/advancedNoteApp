@@ -27,9 +27,9 @@ export default function appendSaveData() {
     //Minus one as the id is zero indexed. 
     if(largestNum > numTasks - 1) {
         resetProperties()
-        console.log("Largess, ", largestNum, numTasks);
+        // console.log("Largess, ", largestNum, numTasks);
     } else {
-        console.log("Nope")
+        console.log("Nope");
     }
 
 
@@ -51,7 +51,7 @@ export default function appendSaveData() {
             taskContainer.append(newTask);
         }
     }
-    console.log(taskContainer);
+    // console.log(taskContainer);
     // localStorage.clear();
 }
 

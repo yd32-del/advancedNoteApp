@@ -14,7 +14,6 @@ export default function category () {
     //make it aoppemd all curremt dropdown option
     const mainSelect = document.getElementById("mainDropDown");
     const options = mainSelect.children;
-
    
     const newSelect = dropDown.children;
     for(let i = 0; i < options.length; i++){

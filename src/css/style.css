@@ -38,3 +38,7 @@ textarea{
     min-height: 5em;
     z-index: 4;
 }
+
+.hide {
+    display: none;
+}

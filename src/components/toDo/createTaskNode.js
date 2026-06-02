@@ -3,6 +3,7 @@ import taskButtons from "../ui/taskButtons.js"
 import taskHeader from "../ui/taskHeader.js";
 import taskTextarea from "../ui/taskTextArea.js";
 
+
 //Call this function when button is clicked. We do not need to inlcude the button click as that is for app state
 //Function can be replaced by class
 
@@ -13,8 +14,10 @@ export default function createTaskNode () {
     taskContainer.classList.add("task");
     taskContainer.classList.add("task-state");
     //Add and id for the task
+
     taskContainer.id = "task" + taskCount;
     taskCount++;
+   
     ///
     const header = taskHeader();
     const textarea = taskTextarea();

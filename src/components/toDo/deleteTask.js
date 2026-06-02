@@ -2,6 +2,7 @@
 import editTask from "../toDo/editTask.js";
 import saveTask from "../toDo/saveTask.js";
 import resetProperties from "../toDo/resetProperties.js";
+import updateId from "./updateId.js";
 
 export default function deleteTask(event){
     const targetBtn = event.target;
@@ -22,6 +23,7 @@ export default function deleteTask(event){
     console.log(task.id);
     const currId = task.id
     const currentTaskId = currId.match(/(\d+)/);
+    // updateId();
     for (let i = 0; i < taskKeys.length; i++) {
         const numId = taskKeys[i].match(/(\d+)/);
         // console.log(numId);
@@ -35,7 +37,9 @@ export default function deleteTask(event){
     
     resetProperties();
 
+
     task.remove();
+    updateId()
 
 }
 

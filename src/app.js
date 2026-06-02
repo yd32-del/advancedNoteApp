@@ -1,5 +1,7 @@
-import createTask from "./components/toDo/createTaskNode.js"
+import createTask from "./components/toDo/createTaskNode.js";
 import createCategory from "./components/toDo/createCategory.js";
+import appendSaveData from "./components/toDo/appendSaveData.js";
+// import appendSaveData from "./components/toDo/appendSaveData.js";
 
 const createTaskbtn = document.getElementById("createTaskBtn");
 const taskContainer = document.querySelector(".task-container");
@@ -19,6 +21,11 @@ createCategoryBtn.addEventListener("click", (e) => {
     createCategory(input);
     console.log(input);
 })
+
+window.onload = () => {
+    appendSaveData();
+    // localStorage.clear()
+}
 
 
 
